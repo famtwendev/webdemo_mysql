@@ -22,7 +22,7 @@ exports.view = (req,res) => {
  
              if(!err){
                  let removeUser = req.query.removed;
-                 res.render('home', { rows, removeUser });
+                 res.render('view', { rows, removeUser });
              } else{
                  console.log(err);
              }

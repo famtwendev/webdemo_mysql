@@ -12,8 +12,9 @@ services:
     networks:
       - app-network
     command: --default-authentication-plugin=mysql_native_password
-volumes:
-  db_data:
 networks:
   app-network:
     external: true
+volumes:
+  db_data:
+    name: db_data
